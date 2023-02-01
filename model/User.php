@@ -21,7 +21,7 @@ class User
         $host = 'localhost';
         $user = 'marija';
         $password = 'marija';
-        $database = 'film_reviews';
+        $database = 'film_review';
         $conn = mysqli_connect($host, $user, $password, $database);
 
         $query = "INSERT INTO user(email, username, password) 

@@ -11,7 +11,8 @@ class Film
     public $rate;
     public $review;
 
-    public function __construct($id, $user_id, $name, $genre, $actors, $duration, $year, $rate, $review) {
+    public function __construct($id, $user_id, $name, $genre, $actors, $duration, $year, $rate, $review)
+    {
         $this->id = $id;
         $this->user_id = $user_id;
         $this->name = $name;
@@ -27,7 +28,7 @@ class Film
         $host = 'localhost';
         $user = 'marija';
         $password = 'marija';
-        $database = 'film_reviews';
+        $database = 'film_review';
         $conn = mysqli_connect($host, $user, $password, $database);
 
         $query = "INSERT INTO film(user_id, name, genre, actors, duration, year, rate, review)
