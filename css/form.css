@@ -1,0 +1,25 @@
+.formating {
+    padding: 20px;
+    margin-left: 25%;
+    width: 50%;
+    text-align: center;
+    border-radius: 15px;
+    background-color: rgba(64, 62, 62, 0.664);
+    display: block;
+    border: 5px solid rgba(107, 75, 5, 0.811);
+    border-radius: 25px;
+    
+}
+
+.formating:hover {
+    
+    background-color: rgba(175, 141, 141, 0.541);
+    display: block;
+    margin-top: 0em;
+    border: 5px solid black;
+    color: black;
+}
+
+::placeholder{
+    color: azure;
+}

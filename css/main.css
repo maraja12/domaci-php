@@ -1,0 +1,18 @@
+
+body{
+    background-image: url("../images/cover.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.btn{
+    width: 200px;
+}
+
+ .foo{
+    display:block;
+    align-items: center;
+    justify-content: center;
+} 
+
