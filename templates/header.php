@@ -16,6 +16,7 @@ if (isset($_POST['logout'])) {
     <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/star.css">
+    <link rel="stylesheet" href="css/film.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 

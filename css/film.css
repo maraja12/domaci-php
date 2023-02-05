@@ -1,0 +1,33 @@
+.image1{
+    position: relative;
+	width: 200px;
+}
+.image__title1 {
+	font-size: 2em;
+	font-weight: bold;
+}
+.image__description1 {
+	font-size: 1.25em;
+	margin-top: 0em;
+	
+}
+.formating1 {
+    margin-left: 25%;
+    width: 50%;
+    text-align: center;
+    border-radius: 15px;
+    background-color: rgba(64, 62, 62, 0.934);
+    display: block;
+    border: 5px solid rgba(107, 75, 5, 0.811);
+    border-radius: 25px;
+    
+}
+
+.formating1:hover {
+    
+    background-color: rgba(48, 44, 44, 0.884);
+    display: block;
+    margin-top: 0em;
+    border: 5px solid black;
+    color: black;
+}
