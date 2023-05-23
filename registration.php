@@ -81,42 +81,41 @@ if (isset($_POST['registration'])) {
         <form class="formating" method="POST" action="<?php echo $_SERVER['PHP_SELF'] ?>">
             <h2><b>Registration</b></h2>
             <div class="container">
-                <input type="text" placeholder="Email" name="email" value="<?php echo htmlspecialchars($email); ?>">
+                <input type="text" placeholder="Email" name="email" class="form-control"
+                    value="<?php echo htmlspecialchars($email); ?>">
                 <div class="red-text">
                     <?php echo $errors['email']; ?>
                 </div>
                 <br>
 
-                <input type="text" placeholder="Username" name="username"
+                <input type="text" placeholder="Username" name="username" class="form-control"
                     value="<?php echo htmlspecialchars($email); ?>">
                 <div class="red-text">
                     <?php echo $errors['username']; ?>
                 </div>
                 <br>
 
-                <input type="password" placeholder="Password" name="password"
+                <input type="password" placeholder="Password" name="password" class="form-control"
                     value="<?php echo htmlspecialchars($password); ?>">
                 <div class="red-text">
                     <?php echo $errors['password']; ?>
                 </div>
                 <br>
 
-                <input type="password" placeholder="Confirm password" name="confirmPassword"
+                <input type="password" placeholder="Confirm password" name="confirmPassword" class="form-control"
                     value="<?php echo htmlspecialchars($confirmPassword); ?>">
                 <div class="red-text">
                     <?php echo $errors['confirmPassword']; ?>
                 </div>
                 <br>
-                <div class="center">
-                    <input type="submit" name="registration" value="Create account"
-                        class="btn yellow accent-3 black-text nav-text z-depth-0">
-                </div>
+                <input type="submit" name="registration" value="Create account" class="btn btn-outline-success" style="width: 150px;
+                text-align: center;color: white;border-color: white;">
         </form>
 
     </div>
 
 
-    <?php include('templates/footer2.php') ?>
+    <?php include('templates/footer.php') ?>
 
 
 

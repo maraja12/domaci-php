@@ -51,24 +51,22 @@ if (isset($_POST['login'])) {
             <h2><b>Login</b></h2>
             <div class="container">
 
-                <input type="text" placeholder="Username" name="username"
+                <input type="text" placeholder="Username" name="username" class="form-control"
                     value="<?php echo htmlspecialchars($username) ?>">
                 <div class="red-text">
                     <?php echo $errors['username']; ?>
                 </div>
                 <br>
 
-                <input type="password" placeholder="Password" name="password"
+                <input type="password" placeholder="Password" name="password" class="form-control"
                     value="<?php echo htmlspecialchars($password) ?>">
                 <div class="red-text">
                     <?php echo $errors['password']; ?>
                 </div>
                 <br>
 
-                <div class="center">
-                    <input type="submit" name="login" value="Login"
-                        class="btn yellow accent-3 black-text nav-text z-depth-0">
-                </div>
+                <input type="submit" name="login" value="Login" class="btn btn-outline-success" style="width: 150px;
+                text-align: center; color: white;border-color: white;">
 
         </form>
     </div>
@@ -76,6 +74,6 @@ if (isset($_POST['login'])) {
 
 
 
-<?php include('templates/footer2.php') ?>
+<?php include('templates/footer.php') ?>
 
 </html>
