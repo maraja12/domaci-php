@@ -1,4 +1,4 @@
-.formating {
+.formating{
     padding: 20px;
     margin-left: 25%;
     width: 50%;
@@ -9,7 +9,7 @@
     border: 5px solid rgba(107, 75, 5, 0.811);
     border-radius: 25px;
     
-}
+} 
 
 .formating:hover {
     
@@ -22,4 +22,16 @@
 
 ::placeholder{
     color: azure;
+    width: 100%;
 }
+
+.modal-content {
+    background-image: url("../images/popcorn.png");
+    
+    
+}
+
+.add-form{
+    padding: 20px;
+}
+
