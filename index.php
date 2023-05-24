@@ -57,71 +57,8 @@ if ($result->num_rows == 0) {
 <?php endif; ?>
 
 <div id="prikazi">
-    <table id="tabela" class="table sortable" style="margin-left:auto; margin-right:auto; text-align:center;width:80%">
+    <div id="displayDataTable"></div>
 
-        <thead>
-            <tr>
-                <th scope="col" style="color:white"><b><big>RAITING<b><big></th>
-                <th scope="col" style="color:white"><b><big>ABOUT FILM<b><big></th>
-                <th scope="col" style="color:white"><b><big>CHOOSE ONE<b><big></th>
-
-            </tr>
-        </thead>
-        <tbody>
-
-            <?php
-            // foreach ($films as $film): 
-            while ($red = $result->fetch_array()) {
-                ?>
-                <tr id="tr-<?php echo $red['id'] ?>">
-                    <td>
-
-                        <div class="image">
-                            <img class="image__img" src="images/starbig.png" alt="Star">
-                            <div class="image__overlay image__overlay--primary">
-                                <h1 style="font-size: 150px;">
-                                    <?php echo htmlspecialchars($red['rate']); ?>
-                                </h1>
-                            </div>
-
-                        </div>
-                    </td>
-
-                    <td style="align:center;">
-
-                        <h1 style="color:gold;font-size: 60px;">
-                            <?php echo htmlspecialchars($red['name']); ?>
-                            <br>
-                        </h1>
-                        <h3 style="color:white;">
-                            <br>
-                            <?php echo "GENRE: " . htmlspecialchars($red['genre']); ?>
-                            <br>
-                            <?php echo "STARS: " . htmlspecialchars($red['actors']); ?>
-                            <br>
-                            <?php echo "YEAR: " . htmlspecialchars($red['year']); ?>
-                            <br>
-                            <?php echo "DURATION: " . htmlspecialchars($red['duration']); ?>
-
-
-                        </h3>
-                    </td>
-
-                    <td>
-                        <label class="radio-btn">
-                            <input type="radio" name="checked-donut" value=<?php echo $red['id'] ?>>
-                            <span class="checkmark"></span>
-                        </label>
-                    </td>
-
-
-                </tr>
-                <?php
-            }
-            ?>
-
-        </tbody>
-    </table>
 </div>
 
 

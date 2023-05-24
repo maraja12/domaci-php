@@ -1,3 +1,21 @@
+//select
+$(document).ready(function () {
+  displayData();
+});
+function displayData() {
+  var displayData = "true";
+  $.ajax({
+    url: "handler/select.php",
+    type: "post",
+    data: {
+      displaySend: displayData,
+    },
+    success: function (data, status) {
+      $("#displayDataTable").html(data);
+    },
+  });
+}
+
 //prikazi
 
 function prikazi() {
